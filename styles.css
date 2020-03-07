@@ -1,0 +1,206 @@
+:root {
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 12px;
+}
+
+html {
+    padding:0;
+    margin:0;
+    overflow:hidden;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+.site-header {
+    width: 100vw;
+    height: 15vh;
+    z-index: 5;
+    position: fixed;
+}
+
+.site-header h1, .site-header h2 {
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    margin:0;
+    color: #333333;
+}
+
+.site-header h1{
+    font-size: 3rem;
+
+}
+.site-header h2 {
+    font-size: 2rem;
+}
+
+.slides {
+    display:flex;
+    width:500vw;
+    height: 100vh;
+}
+.slide{
+    width:100vw;
+
+}
+.intro {
+    width: 100vw;
+    background: rgba(255,255,255, 0.5);
+    height: 30vh;
+    letter-spacing: 0.3rem;
+    line-height:2rem;
+    padding: 1rem 5rem;
+    color: #333333;
+    opacity:0.3;
+    font-weight:900;
+    border-right: 2vw solid white;
+    border-left: 1vw solid white;
+    transition: 2s;
+    position:relative;
+  
+}
+.intro h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom:1rem;
+}
+.intro:hover {
+    opacity:1;
+    color:black;
+}
+
+.intro .learn-more {
+    padding: 5px 20px;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    position:absolute;
+    bottom: 5vh;
+    left:50%;
+    transform: translateX(-50%);
+    transition:1s;
+
+}
+
+.intro .learn-more:hover {
+    background: rgba(255,255,255,0.8);
+
+}
+
+.s1 {
+    background: url('sec1.jpg');
+    background-position: center;
+    transition: all 1s;
+    width:100vw;
+    position: relative;
+
+}
+
+
+.s1-intro {
+    position: absolute;
+    bottom:76px;
+
+
+}
+.s2 {
+    background: url('sec2.jpg');
+    background-position: center;
+    transition: all 1s;
+    width:100vw;
+    position:relative;  
+}
+
+.s2-intro {
+    position: absolute;
+    bottom:75px;
+}
+.s3 {
+    background: url('sec3.jpg');
+    background-position: center;
+    transition: all 1s;
+    width:100vw;
+    position:relative;
+}
+.s3-intro {
+    position: absolute;
+    bottom:75px;
+}
+.s4 {
+    background: url('sec4.jpg');
+    background-position: center;
+    transition: all 1s;
+    width:100vw;
+}
+.s4-intro {
+    position: absolute;
+    bottom:75px;
+}
+.s5 {
+    background: url('sec5.jpg');
+    background-position: center;
+    transition: all 1s;
+    width:100vw;
+}
+.s5-intro {
+    position: absolute;
+    bottom:75px;
+}
+
+.site-nav {
+    width: 100vw;
+    height: 75px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    z-index:2;
+    padding-top:1rem;
+    padding-bottom:0;
+
+}
+
+.site-nav .btn{
+padding: 1rem 2rem;
+border: 2px solid white;
+cursor: pointer;
+transition: all 0.3s;
+letter-spacing: 0.5rem;
+
+}
+.site-nav .btn:hover {
+    background: rgba(0,0,0, 0.5);
+}
+
+
+input[name="s"]{
+    visibility:hidden;
+    width:0;
+    height:0;
+}
+
+#r1:checked ~.slide{
+    margin-left:0;
+}
+#r2:checked ~.slide{
+    transform: translateX(-100vw);
+   
+}
+#r3:checked ~.slide{
+    transform: translateX(-200vw);
+
+}
+#r4:checked ~.slide{
+    transform: translateX(-300vw);
+
+}
+#r5:checked ~.slide{
+    transform: translateX(-400vw);
+
+}
